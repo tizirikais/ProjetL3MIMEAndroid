@@ -1,0 +1,21 @@
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue=""
+        android:inputType="textPassword"
+        android:key="password"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_display_name"
+        tools:textStyle="italic" />
+    <ListPreference
+        android:defaultValue="0"
+        android:key="language"
+        android:title="@string/language"
+        android:entries="@array/languages"
+        android:entryValues="@array/language_id"
+        />
+
+</PreferenceScreen>

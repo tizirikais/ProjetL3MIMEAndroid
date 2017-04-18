@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/journ_e" android:id="@+id/day" />
+    <item android:title="@string/mois" android:id="@+id/month" />
+    <item android:title="@string/recherche" android:id="@+id/search"
+        android:icon="?android:attr/actionModeWebSearchDrawable" />
+    <item android:title="@string/graphes" android:id="@+id/Graphes"/>
+    <item android:title="@string/param_tres" android:id="@+id/settings"
+        android:icon="@drawable/ic_settings_black_24dp" />
+    <item android:title="@string/aide" android:id="@+id/help"
+        android:icon="@android:drawable/ic_menu_help" />
+</menu>

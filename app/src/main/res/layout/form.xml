@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.mydays.journal.MainActivity"
+    android:background="@drawable/identifier">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Qu'avez vous fait Aujourd'hui !" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:text="@string/cat_gorie"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:id="@+id/titre"
+            android:textStyle="normal|bold"
+            android:textColor="?attr/colorAccent"
+            android:textSize="20sp"
+            android:inputType=""
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="362dp"
+            android:padding="8dp"
+            android:text="@string/contenue"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:inputType="textMultiLine"
+            android:ems="50"
+            android:id="@+id/contenue"
+            android:textSize="18sp"
+            android:textStyle="normal|italic"
+            android:textColor="@color/caldroid_black" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:id="@+id/rating"
+                android:stepSize="0.5"
+                android:rating="1"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/smiley"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
